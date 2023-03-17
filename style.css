@@ -2,6 +2,7 @@ body{
     font-family: 'Source Sans 3', sans-serif;
     background-image: linear-gradient(to left, rgba(144, 67, 238, 0.5), rgba(0,0,0,0.9));
     background-repeat: repeat;
+    background-position: center;
     background-size: cover;
     background-color: #212529;
     color: rgba(255, 255, 255, 0.8);
@@ -61,7 +62,10 @@ main{
     font-size: 5rem;
     font-weight: bold;
 }
-#joao_span,#front_end, #web_dev {
+#joao_span{
+    color:#652fa7c4;
+}
+#front_end, #web_dev {
     color:#8F43EE;
     transition-duration: 0.5s;
     
@@ -137,10 +141,10 @@ hr{
 
 
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1200px) {
     #intro_name, #intro{
         min-width: 250px;
-        text-align: left;
+        text-align: center;
     }
     #intro_name{
         font-size: 3rem;
@@ -175,8 +179,41 @@ hr{
         margin-right: 0;
     }
 }
-@media all and (max-width: 700px){
+@media all and (max-width: 500px){
     #about_me{
-        margin-top: 70%
+        margin-top: 100%
+    }
+    #intro_name, #intro{
+        min-width: 200px;
+        text-align: center;
+    }
+    #intro_name{
+        font-size: 3rem;
+    }
+    #intro{
+        padding: 0;
+        margin: 0;
+    }
+    .lead > a{
+        min-width: 100%;
+        padding: 10px;
+    }
+    .btn{
+        width: 100%;
+    }
+    hr{
+        display: none;
+    }
+    #about_me_div, #skills{
+        text-align: center;
+    }
+    #skills_icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #skills_icons i{
+        margin-right: 0;
     }
 }
