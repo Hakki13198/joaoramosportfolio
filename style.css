@@ -1,6 +1,6 @@
 body{
     font-family: 'Source Sans 3', sans-serif;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("https://img.freepik.com/free-vector/background-tamplate_125964-697.jpg?w=1380&t=st=1679065562~exp=1679066162~hmac=31b990e1cb4b93d22d2070ba0aa73e2b1461fafadbaf8ef5a49403f2f5b07b93");
+    background-image: linear-gradient(to left, rgba(144, 67, 238, 0.5), rgba(0,0,0,0.9));
     background-repeat: repeat;
     background-size: cover;
     background-color: #212529;
