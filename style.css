@@ -1,0 +1,182 @@
+body{
+    font-family: 'Source Sans 3', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("https://img.freepik.com/free-vector/background-tamplate_125964-697.jpg?w=1380&t=st=1679065562~exp=1679066162~hmac=31b990e1cb4b93d22d2070ba0aa73e2b1461fafadbaf8ef5a49403f2f5b07b93");
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #212529;
+    color: rgba(255, 255, 255, 0.8);
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+    transition-duration: 0.37s;
+    padding: 0px 20px;
+}
+.navbar-brand{
+    float: left;
+}
+.logo{
+    margin: 5px;
+    margin-right: 15px;
+}
+h1{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #8F43EE;
+    font-weight: bold;
+    transition-duration: 0.37s;
+}
+h1:hover{
+    color: #F0EB8D;
+}
+.nav-link:hover{
+    color: #8F43EE;
+}
+.navbar-nav > a{
+    margin: 0px 10px;
+}
+
+main{
+    margin-top: 200px;
+    width: 100%;
+}
+#flex_div{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.main_div{
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+#intro_name{
+    font-size: 5rem;
+    font-weight: bold;
+}
+#joao_span,#front_end, #web_dev {
+    color:#8F43EE;
+    transition-duration: 0.5s;
+    
+}
+#web_dev:hover, #joao_span:hover, #front_end:hover{
+    color: #F0EB8D;
+}
+#intro{
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9;
+    line-break: loose;
+    padding: 0px 10px;
+}
+.btn{
+    margin: 25px auto;
+    border: none;
+    border-radius: 0;
+    width: 40%;
+    background-color: #8F43EE;
+    color: white;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: #F0EB8D;
+    color: black;
+}
+hr{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 215px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
+}
+.h1_css{
+    font-size: 3rem;
+}
+.fa-css{
+    margin-right: 20px;
+    color: white;
+}
+#about_me_div{
+    margin-top: 120px;
+}
+#intro_about_me span{
+    font-weight: bold;
+}
+#intro_about_me a{
+    color:#8F43EE;
+    font-weight: bold;
+}
+#intro_about_me p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.intro_h4{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#skills_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: no-wrap;
+}
+#skills_icons i{
+    margin-right: 100px;
+}
+
+
+
+
+@media all and (max-width: 1000px) {
+    #intro_name, #intro{
+        min-width: 250px;
+        text-align: left;
+    }
+    #intro_name{
+        font-size: 3rem;
+    }
+    #intro{
+        padding: 0;
+        margin: 0;
+    }
+    .lead > a{
+        min-width: 100%;
+        padding: 10px;
+    }
+    .btn{
+        width: 100%;
+    }
+    hr{
+        display: none;
+    }
+    #about_me{
+        margin-top: 33%;
+    }
+    #about_me_div, #skills{
+        text-align: center;
+    }
+    #skills_icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #skills_icons i{
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 700px){
+    #about_me{
+        margin-top: 70%
+    }
+}
