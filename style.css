@@ -124,7 +124,8 @@ hr{
     font-weight: 300;
 }
 .intro_h4{
-    margin-bottom: 20px;
+    margin: 50px auto;
+    margin-top: 100px;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -137,10 +138,28 @@ hr{
 #skills_icons i{
     margin-right: 100px;
 }
-
-
-
-
+#projects{
+    margin-top: 120px;
+}
+.placeholder_img{
+    width: 100%;
+}
+.placeholder_text{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    height: 50px;
+}
+footer > div{
+    color: white;
+    font-size: 1.12rem;
+}
 @media all and (max-width: 1200px) {
     #intro_name, #intro{
         min-width: 250px;
@@ -179,7 +198,7 @@ hr{
         margin-right: 0;
     }
 }
-@media all and (max-width: 500px){
+@media all and (max-width: 600px){
     #about_me{
         margin-top: 100%
     }
