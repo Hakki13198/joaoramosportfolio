@@ -1,6 +1,6 @@
 body{
     font-family: 'Source Sans 3', sans-serif;
-    background-image: linear-gradient(to left, rgba(144, 67, 238, 0.5), rgba(0,0,0,0.9));
+    background-image: linear-gradient(12deg, rgba(144, 67, 238, 0.5), rgba(0,0,0,0.9));
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -8,7 +8,7 @@ body{
     color: rgba(255, 255, 255, 0.8);
 }
 .nav-link{
-    color: white;
+    color: rgba(255, 255, 255, 0.774);
     font-weight: bold;
     font-size: 1.15rem;
     transition-duration: 0.37s;
@@ -16,6 +16,7 @@ body{
 }
 .navbar-brand{
     float: left;
+    
 }
 .logo{
     margin: 5px;
@@ -38,9 +39,29 @@ h1:hover{
 .navbar-nav > a{
     margin: 0px 10px;
 }
-
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #212529;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 main{
     margin-top: 350px;
+    margin-bottom: 150px;
     width: 100%;
 }
 #flex_div{
@@ -54,7 +75,7 @@ main{
 }
 .main_div{
     text-align: center;
-    width: 40%;
+    width: 50%;
     height: 100%;
     position: relative;
 }
@@ -105,7 +126,7 @@ hr{
     position: relative;
     width: 50%;
     margin: auto;
-    margin-top: 215px;
+    margin-top: 150px;
     margin-bottom: 100px;
     background-color: whitesmoke;
 }
@@ -144,9 +165,6 @@ hr{
 #skills_icons i{
     margin-right: 100px;
 }
-#projects{
-    margin-top: 120px;
-}
 .placeholder_img{
     width: 100%;
 }
@@ -156,15 +174,51 @@ hr{
 }
 footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #212529;
-    height: 50px;
 }
-footer > div{
+footer > h1{
+    font-size: 3rem;
+}
+#copyrights{
+    padding: 15px;
     color: white;
     font-size: 1.12rem;
+    text-align: justify;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+form > label{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+input{
+    width: 30vw;
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    outline: none;
+}
+label, textarea{
+    font-family: 'Source Sans 3', sans-serif;
+}
+footer > h1{
+    margin-top: 50px;
+}
+#footerHr{
+    margin-top: 0;
 }
 @media all and (max-width: 1200px) {
     #intro_name, #intro{
@@ -190,10 +244,11 @@ footer > div{
         width: 100%;
     }
     hr{
-        display: none;
+        display: block;
+        opacity: 0;
     }
-    #about_me{
-        margin-top: 33%;
+    #about_me, #projects{
+        margin-top: 150px;
     }
     #about_me_div, #skills{
         text-align: center;
@@ -210,11 +265,15 @@ footer > div{
 }
 @media all and (max-width: 700px){
     main{
-        margin-top: 200px;
+        margin-top: 300px;
         width: 100%;
     }
-    #about_me{
-        margin-top: 400px;
+    .main_div{
+        width: 100%;
+    }
+    #top_buttons{
+        width: 50%;
+        margin: 20px auto;
     }
     #intro_name, #intro, #top_buttons{
         min-width: 233px;
@@ -235,7 +294,8 @@ footer > div{
         width: 100%;
     }
     hr{
-        display: none;
+        display: block;
+        opacity: 0;
     }
     #about_me_div, #skills{
         text-align: center;
@@ -248,5 +308,14 @@ footer > div{
     }
     #skills_icons i{
         margin-right: 0;
+    }
+    form{
+        text-align: center;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 25vh;
     }
 }

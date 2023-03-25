@@ -20,10 +20,7 @@
             <img class="float-xl-start logo"src="logo.png" width="40" height="40" alt="logo">
             <h1>João's Portfolio</h1>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" href="https://www.linkedin.com/in/jo%C3%A3o-ramos-6851b4263/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
               <a class="nav-link" href="https://github.com/Hakki13198" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
@@ -63,7 +60,6 @@
               I specialize in Fronted but I'm always looking for opportunities to learn and grow.
               When I'm not working, you can find me on Discord, gaming with my friends.
               <br>
-              I'm always looking for ways to make a positive impact in my community and beyond.
               If you'd like to learn more about my work or have a <a href="#hr_projects">Project</a> you'd like to discuss, 
               feel free to contact me!
             </p>
@@ -136,7 +132,31 @@
       </div>
     </main>
     <footer>
-            <div>João Ramos © 2023. All rights Reserved. </div>
+      <h1>Contact me</h1>
+      <form
+      action="https://formspree.io/f/xbjeaqve"
+      method="POST">
+      <label>
+        Your First Name: <br>
+        <input type="text" name="firstName">
+      </label>
+      <label>
+        Your Last Name: <br>
+        <input type="text" name="lastName">
+      </label>
+      <label>
+        Your email: <br>
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message: <br>
+        <textarea name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button class="btn btn-lg" type="submit">Send</button>
+      </form>
+      <hr id="footerHr">
+      <div id="copyrights">João Ramos © 2023. All rights Reserved. </div>
     </footer>
     <script src="https://kit.fontawesome.com/8954519de3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
